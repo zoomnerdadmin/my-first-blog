@@ -1,0 +1,12 @@
+<!-- home.html -->
+
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}Bem vindo ao ZoomNerd{% endblock %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css '%}"
+{% endblock %}
+{% block content %}
+    <h1> Olá {{ user.username }} !!! </h1>
+    <button type="button" onclick="window.location.href='/logout/' ">Sair</button>
+{% endblock %}
